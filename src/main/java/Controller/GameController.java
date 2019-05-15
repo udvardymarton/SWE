@@ -35,20 +35,18 @@ public class GameController {
     @FXML
     GridPane table; //board
     /**
-     * Egy label, ezzel hozom be a contentet, és az ablakot.
-     */
-    @FXML
-    Label warning;
-    /**
      * A text-ben megadott szöveget írom ki vele.
      */
     @FXML
     Label tableText;
     /**
-     * A tábla létrehozásakor a négyzetek színeit állítja be.
+     * Logger.
      */
     private static Logger logger = LoggerFactory.getLogger(GameController.class);
 
+    /**
+     * A tábla létrehozásakor a négyzetek színeit állítja be.
+     */
     @FXML
     private void initialize() {
         new Table();
@@ -130,7 +128,7 @@ public class GameController {
      */
     @FXML
     public void BackToNames() {
-        Scene scene = warning.getScene();
+        Scene scene = table.getScene();
         Parent root = null;
         try {
             root = FXMLLoader.load(getClass().getResource("/FXML/PlayerName.fxml"));

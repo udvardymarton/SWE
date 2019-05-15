@@ -49,6 +49,9 @@ public class WinnerController {
      */
     @FXML
     VBox idTable;
+    /**
+     * Logger.
+     */
     private static Logger logger = LoggerFactory.getLogger(ChooseNameController.class);
 
     /**

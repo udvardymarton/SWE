@@ -45,7 +45,9 @@ public class ChooseNameController {
     @FXML
     Label red;
 
-
+    /**
+     * Logger.
+     */
     private static Logger logger = LoggerFactory.getLogger(ChooseNameController.class);
 
     /**

@@ -17,14 +17,11 @@
         </GridPane>
     </right>
     <center>
-        <HBox alignment="CENTER">
-            <HBox alignment="CENTER">
-                <Label fx:id="tableText" text="Let's playin boiz"></Label>
-            </HBox>
-            <Label fx:id="warning" text=" "/>
+        <VBox>
+            <Label fx:id="tableText" text="Let's playin boiz"/>
             <Button text="Back" onAction="#BackToNames"/>
             <Button text="Exit" onAction="#exitTable"/>
-        </HBox>
+        </VBox>
     </center>
     <stylesheets>
         <URL value="@/style/Style.css"/>

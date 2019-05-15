@@ -24,10 +24,20 @@ public class LeaderBoard {
      */
     private static LinkedHashMap<String, Integer> rankList = new LinkedHashMap<String, Integer>();
 
+    /**
+     * rankList Gettere.
+     *
+     * @return visszatér a rankListtel.
+     */
     public static LinkedHashMap<String, Integer> getRankList() {
         return rankList;
     }
 
+    /**
+     * rankList Settere.
+     *
+     * @param rankList rankList beállításához.
+     */
     public static void setRankList(LinkedHashMap<String, Integer> rankList) {
         LeaderBoard.rankList = rankList;
     }

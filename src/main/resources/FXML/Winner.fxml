@@ -12,12 +12,12 @@
             xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.WinnerController">
 
 
-    <center>
+    <bottom>
         <HBox alignment="CENTER" BorderPane.alignment="CENTER">
             <Button onAction="#ExitButtonClicked" text="Exit"/>
             <Button onAction="#NewGameButtonClicked" text="New Game"/>
         </HBox>
-    </center>
+    </bottom>
     <top>
         <VBox>
             <Label fx:id="gyoztes" text=" ">
@@ -27,7 +27,7 @@
             </Label>
         </VBox>
     </top>
-    <right>
+    <left>
         <VBox fx:id="idTable" prefHeight="292.0" prefWidth="164.0">
             <HBox alignment="CENTER">
                 <HBox alignment="TOP_RIGHT" minWidth="300">
@@ -38,7 +38,7 @@
                 </HBox>
             </HBox>
         </VBox>
-    </right>
+    </left>
     <stylesheets>
         <URL value="@/style/Style.css"/>
     </stylesheets>

@@ -24,6 +24,9 @@ public class MainMenuController {
      */
     @FXML
     Label warning;
+    /**
+     * Logger.
+     */
     private static Logger logger = LoggerFactory.getLogger(MainMenuController.class);
 
     /**

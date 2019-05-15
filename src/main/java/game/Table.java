@@ -33,6 +33,11 @@ public class Table {
         };
     }
 
+    /**
+     * Table setter.
+     *
+     * @param table maga a tábla.
+     */
     public static void setTable(char[][] table) {
         Table.table = table;
     }
