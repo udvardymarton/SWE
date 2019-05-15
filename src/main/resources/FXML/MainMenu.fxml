@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import java.net.URL?>
+
+<BorderPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.172-ea"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.MainMenuController">
+    <center>
+        <VBox alignment="CENTER">
+            <Button onAction="#ButtonClicked" text="Game start"/>
+            <Label fx:id="warning" text=" "/>
+        </VBox>
+    </center>
+    <top>
+        <VBox>
+            <Label
+                    fx:id="welCome" text="Welcome in the">
+            </Label>
+            <VBox alignment="CENTER">
+                <Label fx:id="colorGame" text="Color Game">
+                    <font>
+                        <Font size="96.0"/>
+                    </font>
+                </Label>
+            </VBox>
+        </VBox>
+    </top>
+
+    <stylesheets>
+        <URL value="@/style/Style.css"/>
+    </stylesheets>
+
+</BorderPane>

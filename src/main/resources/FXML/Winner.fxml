@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.172-ea"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.WinnerController">
+
+
+    <center>
+        <HBox alignment="CENTER" BorderPane.alignment="CENTER">
+            <Button onAction="#ExitButtonClicked" text="Exit"/>
+            <Button onAction="#NewGameButtonClicked" text="New Game"/>
+        </HBox>
+    </center>
+    <top>
+        <VBox>
+            <Label fx:id="gyoztes" text=" ">
+                <font>
+                    <Font name="System Italic" size="36.0"/>
+                </font>
+            </Label>
+        </VBox>
+    </top>
+    <right>
+        <VBox fx:id="idTable" prefHeight="292.0" prefWidth="164.0">
+            <HBox alignment="CENTER">
+                <HBox alignment="TOP_RIGHT" minWidth="300">
+                    <Label fx:id="names" text="Names"/>
+                </HBox>
+                <HBox alignment="TOP_RIGHT" minWidth="300">
+                    <Label fx:id="points" text="Points"/>
+                </HBox>
+            </HBox>
+        </VBox>
+    </right>
+    <stylesheets>
+        <URL value="@/style/Style.css"/>
+    </stylesheets>
+</BorderPane>

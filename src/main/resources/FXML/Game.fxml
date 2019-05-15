@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import java.net.URL?>
+
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="Controller.GameController"
+            prefHeight="400.0" prefWidth="600.0">
+    <right>
+        <GridPane
+                fx:id="table" onMouseClicked="#gridClicked">
+        </GridPane>
+    </right>
+    <center>
+        <HBox alignment="CENTER">
+            <HBox alignment="CENTER">
+                <Label fx:id="tableText" text="Let's playin boiz"></Label>
+            </HBox>
+            <Label fx:id="warning" text=" "/>
+            <Button text="Back" onAction="#BackToNames"/>
+            <Button text="Exit" onAction="#exitTable"/>
+        </HBox>
+    </center>
+    <stylesheets>
+        <URL value="@/style/Style.css"/>
+    </stylesheets>
+</BorderPane>
